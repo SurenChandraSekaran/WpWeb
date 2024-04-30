@@ -1,0 +1,1006 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Adding Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>PORTFOLIO</title>
+	<style>
+		body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		  background-color: black;
+		 
+		}
+		
+		.topnav {
+		  overflow: hidden;
+		  background-color: black;
+		}
+		
+		.topnav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+		
+		.topnav a:hover {
+		  background-color: rgb(212, 73, 212);
+		  color: black;
+		}
+		
+		.topnav a.active {
+		  
+		  color: white;
+		}
+		
+		.topnav-right {
+		  float: right;
+		}
+		
+.flip-card-3D-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 300px; 
+  perspective: 900px;
+  margin: 10px auto;
+}
+
+.flip-card {
+  height: 100%;
+  transition: all 1s ease-in-out;
+  transform-style: preserve-3d;
+  height: 500px;
+}
+
+.flip-card img{
+  display: block;
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
+
+
+.do-flip {transform: rotateY(-180deg);}
+
+.flip-card-btn-turn-to-back, .flip-card-btn-turn-to-front {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;  
+  visibility: hidden;
+  border-radius: 10px;
+}
+
+.flip-card-btn-turn-to-back{
+    border: white ;
+   background:white;
+   color: black;
+}
+
+.flip-card-btn-turn-to-front  {
+	border: white ;
+   background:white;
+   color: black;
+}
+
+.flip-card-front, .flip-card-back {
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  z-index: 2;
+  border-radius: 10x;
+  border:5px -webkit-linear-gradient(purple, darkviolet);
+}
+
+.flip-card-front {background: -webkit-linear-gradient(purple, darkviolet);}
+.flip-card-back {background: -webkit-linear-gradient(purple, darkviolet);transform: rotateY(180deg);}
+.flip-card-front {color: white;}
+.flip-card-back h4 {color: white }
+.card {
+    background: -webkit-linear-gradient(purple, darkviolet); /* Change the color to light blue */
+	color: white;
+	height: 100%;
+	
+}
+
+				.carousel-item img {
+					animation: animateImage 3s ease infinite alternate;
+				}
+		
+				@keyframes animateImage {
+					0% {
+						transform: scale(1);
+					}
+					100% {
+						transform: scale(1.1);
+					}
+				}
+	
+		
+				@keyframes animateImage {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+			transform: scale(1.1);
+					}
+				}
+	
+
+.background {
+  position: sticky;
+  pointer-events: none;
+  z-index: -1;
+  top: 0;
+  float:left;
+  float:right;
+  bottom: 0;
+  margin-bottom: 0; 
+}
+
+.custom-btn {
+    background-color: gray;
+    color: white;
+}
+.custom-btn:hover {
+        background-color: purple;
+    }
+
+
+.legal {
+  font-size: 12px;
+  margin: 0;
+  z-index: -1;
+}
+
+.svg {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(10) scaleX(2.25);
+  transform-origin: bottom;
+  box-sizing: border-box;
+  display: block;
+  pointer-events: none;
+}
+
+.footer {
+  position: float;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 5%;
+
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+  padding-bottom: 80px;
+  padding-left: 60px;
+  width: 100%;
+  height: auto;
+  
+}
+
+
+@media (width > 420px) {
+  .section {
+    align-items: center;
+    padding-left: 0;
+
+  }
+
+  .links {
+    gap: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+	
+		<!--navbar-->
+		<div class="topnav">
+			<a  href="#about">About us</a>
+			<a href="#skills">Our Skills</a>
+			<a href="#interest">Our Interest</a>
+			<div class="topnav-right">
+			  <a href="#contact">Contact Us</a>
+			  
+			</div>
+		  </div>
+		  
+        <!--navbar end-->
+		
+		
+			<!-- header -->
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img src="images/slider1.jpg" class="d-block w-100" alt="images/slider1.jpg">
+				  <div class="carousel-caption d-md-block">
+					<h1 class="display-4" style="color: white;">Welcome</h1>
+				  </div>
+				</div>
+				<div class="carousel-item">
+				  <img src="images\kmkzz.png"class="d-block w-100" alt="images/slider1.jpg">
+				  <div class="carousel-caption d-md-block">
+					<h5>Our group name.....</h5>
+					<p>Kamikaze</p>
+				  </div>
+				</div>
+				<div class="carousel-item">
+				  <img src="images\ntwrk2.jpg"class="d-block w-100" alt="images/slider1.jpg">
+				  <div class="carousel-caption d-md-block" style=" text-shadow: -1px -1px 0 black,  
+                                     1px -1px 0 black,
+                                    -1px 1px 0 black,
+                                     1px 1px 0 black;">
+					<h5><b>Our mission?</b></h5>
+					<p><b>We aspire to be the best in our fields in order to compete in the challenging working industry and make a difference in this constantly flourishing tech world</b></p>
+				  </div>
+				</div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+			<!-- header end -->
+	
+		
+
+
+		<!-- About Us section -->
+
+		<section id="about" class="flip-box">
+			<div class="text-center ">
+				<h1 class="display-4" style="color: white;">About us</h1>
+				<hr class="w-25 mx-auto" />
+			</div>
+			
+		</section>
+
+		
+
+		<!-- container start -->
+		<div class='container'>
+			<div class='row'>  
+			<div class="flip-card-3D-wrapper col-md-4">
+			<div class="flip-card">
+			<div class="flip-card-front">
+			<div class='card-img'><img src="images\shop _photo.jpg"style="width: 300px;height: 250px;"></div>  
+			   <div class='card-body'> 
+				<h4 class="text-center" style="font-family: Verdana, Geneva, sans-serif;"><br><br><br>SALINI RAVINTHIRAN</h4>
+				<button class="flip-card-btn-turn-to-back">Get to know me</button>
+			   </div>  
+			</div>
+			<div class="flip-card-back">
+			   <div class='card-body'> 
+			   <h4 class="text-center">About Salini</h4>
+			   <p style="color: white ;">As a second-year student at UTM, I'm deeply engrossed in the world of programming and web development, mastering languages like C++, Java, HTML, CSS, and JavaScript.
+			   My assertive nature drives me to tackle challenges with unwavering determination. I thrive on adaptability, effortlessly navigating through various situations.
+			   Generosity and humility are values close to my heart; I firmly believe in lending a helping hand and fostering effective leadership. Hard work is ingrained in my ethos; I strive for nothing short of excellence in every endeavor. 
+			   As a passionate learner and dedicated team player, I'm committed to continual growth and making a positive impact in the tech field.</p>
+			       
+			   <button class="flip-card-btn-turn-to-front">Back</button>
+			   </div>   
+			</div>
+			</div>
+			</div>  
+			<div class="flip-card-3D-wrapper col-md-4">
+			<div class="flip-card">
+			<div class="flip-card-front">
+			<div class='card-img'><img src="images\nvn.jpeg"style="width: 300px;height: 250px;"></div>
+			   <div class='card-body'> 
+				<h4 class="text-center" style= "font-family: Verdana, Geneva, sans-serif;"><br><br><br>NAVVEEN</h4>
+				
+				<button class="flip-card-btn-turn-to-back">Get to know me</button>
+			   </div>  
+			</div>
+			<div class="flip-card-back">
+			   <div class='card-body'> 
+			   <h4 class="text-center">About Navveen</h4>
+			   <p style="color: white ;"> Hi ! My name is Navveen. I'm a student from Universiti Teknologi Malaysia
+										  and currently pursuing in Bachelor of Computer Science (Computer Networks & Security).
+										  I am currently 21 yeaars old and planning to continue pursuing into the field of IT because it is interesting and broad .
+				                          Not only that , doing art fascinates me since its a very subjective and abstract way of how people could express a thought or an idea .
+										  Hence , a combination of IT and designing has caught my attention and has been working on improving my Web Programming skills ever since /*:)*/.</p>
+			             
+			   <button class="flip-card-btn-turn-to-front">Back</button>
+			   </div>   
+			</div>
+			</div>
+			</div> 
+			<div class="flip-card-3D-wrapper col-md-4">
+			<div class="flip-card">
+			<div class="flip-card-front">
+			<div class='card-img'><img src="images\srn.jpeg"style="width: 300px;height: 250px;"></div >
+			   <div class='card-body'> 
+				<h4 class="text-center" style="font-family: Verdana, Geneva, sans-serif;"><br><br><br>SUREN</h4>
+			
+				<button class="flip-card-btn-turn-to-back">Get to know me</button>
+			   </div>  
+			</div>
+			<div class="flip-card-back">
+			   <div class='card-body'> 
+			   <h4 class="text-center">About Suren</h4>
+			   <p style="color: white ;">Hello! My name is Suren. I'm a 21 year old undergraduate student in Universiti Teknologi Malaysia, Skudai. 
+			   I am currently studying Computer Science(Network and Security)course. I whole-heartedy enjoy my course and plan to pursue a career related
+			   to that field. I consider myself a kind-hearted and determined young man. I always put effort in being nice and thoughtful to those around
+			   me. Moreover, I don't think twice to put in hard work and dedication to achieve my goals in life.</p>
+			              
+			   <button class="flip-card-btn-turn-to-front">Back</button>
+			   </div>   
+			</div>
+			</div>
+			</div>   
+			</div>
+			</div>  
+
+<!-- container end-->
+<!-- About Us section End -->
+
+
+
+<!-- Our Skills Section Start -->
+<section id="skills" class="main_heading my-5 pt-5 black">
+    <div class="text-center">
+        <h1 class="display-4" style="color: white;">Our Skills</h1>
+        <hr class="w-25 mx-auto" />
+    </div>
+
+    <div class="container my-service">
+        <div class="row my-5">
+            <!-- First three cards side by side -->
+            <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-img-top">
+                        <img src="images/h1.jpg" class="img-fluid rounded-start" alt="images/g1.jpg" style="width: 100%;height: 250px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Programming Languages</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li>C++</li>
+                                <li>C</li>
+                                <li>Java</li>
+                            </ul>
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second card -->
+            <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-img-top">
+                        <img src="images/h2.png" class="img-fluid rounded-start"  style="width: 100%;height: 250px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Software Development</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li>Experience in software development methodologies such as Agile or Scrum.</li>
+                                <li>Understanding of version control systems like Git and collaboration platforms like GitHub or GitLab.</li>
+                            </ul>
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third card -->
+            <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-img-top">
+                        <img src="images/h3.jpg" class="img-fluid rounded-start" alt="images/g1.jpg" style="width: 100%;height: 250px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+
+	
+	
+						<div class="col-md-4 col-10 col-xxl-4 mx-auto">
+							<div class="card mb-3" style="max-width: 540px;">
+								  <div class="row">
+									<div class="card-img-top">
+										<img src="images/h4.jpg" class="img-fluid rounded-start" alt="images/g1.jpg" style="width: 100%;height: 250px;">
+									</div>
+									<div class="col-md-8">
+									  <div class="card-body">
+										<h5 class="card-title">Data Structures and Algorithms</h5>
+										<p class="card-text">
+											<ul>
+											  <li>Strong understanding of fundamental data structures (arrays, linked lists, trees, graphs, etc.) and algorithms (sorting, searching, dynamic programming, etc.).</li>
+											  <li>Ability to analyze algorithmic complexity and optimize code for performance.</li>
+										
+											  
+											</ul>  </p>
+										<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+									  </div>
+									</div>
+								  </div>
+								</div>
+						</div>
+						
+						<div class="col-md-4 col-10 col-xxl-4 mx-auto">
+							<div class="card mb-3" style="max-width: 540px;">
+								  <div class="row">
+									<div class="card-img-top">
+										<img src="images/h5.jpg" class="img-fluid rounded-start" alt="images/g1.jpg" style="width: 100%;height: 250px;">
+									</div>
+									<div class="col-md-8">
+									  <div class="card-body">
+										<h5 class="card-title">Problem Solving and Debugging</h5>
+										<p class="card-text">
+											<ul>
+											  <li>Strong analytical and problem-solving skills, with the ability to debug and troubleshoot complex issues efficiently.</li>
+											  <li>Experience in writing clean, maintainable, and well-documented code.</li>
+											 
+											  
+											</ul>  </p>
+										<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+									  </div>
+									</div>
+								  </div>
+								</div>
+						</div>
+
+						<div class="col-md-4 col-10 col-xxl-4 mx-auto">
+							<div class="card mb-3" style="max-width: 540px;">
+								  <div class="row">
+									<div class="card-img-top">
+										<img src="images/h6.jpg" class="img-fluid rounded-start" alt="images/g1.jpg" style="width: 100%;height: 250px;">
+									</div>
+									<div class="col-md-8">
+									  <div class="card-body">
+										<h5 class="card-title">Soft Skills</h5>
+										<p class="card-text">
+											<ul>
+											  <li>Effective communication skills for collaborating with team members and presenting technical concepts.</li>
+											  <li>Strong time management and organizational skills for handling multiple projects simultaneously.</li>
+											 <li>Continuous learning mindset with a passion for staying updated with the latest technologies and trends.</li>
+											  
+											</ul>  </p>
+										<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+									  </div>
+									</div>
+								  </div>
+								</div>
+						</div>
+	
+						
+					</div>
+					
+				</div>
+	
+	
+				
+			</section>
+	
+			<!-- our skill End -->
+			<!-- our Interest -->
+			<section id="interest"  class="main_heading my-5 pt-5 black">
+				<div class="text-center">
+					<h1 class="display-4"  style="color: white;">Our Interest</h1>
+					<hr class="w-25 mx-auto" />
+				</div>
+				
+				
+					<div class="container my-service">
+						<div class="row my-5">
+							<!-- First card -->
+							<div class="col-md-4 col-10 col-xxl-4 mx-auto">
+								<div class="card mb-3" style="max-width: 540px;">
+									<div class="card-img-top">
+										<img src="images\slnpiano.png" class="img-fluid rounded-start" alt="images/g1.jpg" style="width: 100%;height: 250px;">
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											<h1>SALINI</h1>
+											<button id="btn1" onclick="startTyping(1)">EXPLORE MORE</button>
+											<p id="demo1"></p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- Second card -->
+							<div class="col-md-4 col-10 col-xxl-4 mx-auto">
+								<div class="card mb-3" style="max-width: 540px;">
+									<div class="card-img-top">
+										<img src="images\nvnart.jpg" class="img-fluid rounded-start" alt="images/g1.jpg" style="width: 100%;height: 250px;">
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											<h1>NAVVEEN</h1>
+											<button id="btn2" onclick="startTyping(2)">EXPLORE MORE</button>
+											<p id="demo2"></p>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- Third card -->
+							<div class="col-md-4 col-10 col-xxl-4 mx-auto">
+								<div class="card mb-3" style="max-width: 540px;">
+									<div class="card-img-top">
+										<img src="images\srngmng.jpg" class="img-fluid rounded-start" alt="images/g1.jpg" style="width: 100%;height: 250px;">
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											<h1>SUREN</h1>
+											<button id="btn3" onclick="startTyping(3)">EXPLORE MORE</button>
+											<p id="demo3"></p>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- WRITE YOUR INTEREST HERE-->
+				<script>
+				var typingStarted = [false, false, false];
+				var txt = ['Beyond programming and technology, my interests span music, particularly piano, ice skating, and a thirst for learning about diverse cultures and ideas. Art is a profound passion, from sketching to painting, allowing me to express myself creatively and bring ideas to life with personality and meaning.', 'I find solace in creating art, whether through painting vibrant landscapes or sketching intricate designs, all while immersing myself in the soothing melodies of classical music. The fusion of artistic expression and musical inspiration ignites my creativity, providing a profound sense of fulfillment and joy in my pursuits.', 'I am passionate about gaming, finding excitement in virtual worlds, while also relishing the thrill of badminton matches with friends. In my downtime, I indulge in the immersive worlds of movies, TV series, and anime, enriching my leisure hours with captivating stories and unforgettable characters.'];
+				var speed = 50;
+				
+				function startTyping(cardNumber) {
+					if (!typingStarted[cardNumber - 1]) {
+						typingStarted[cardNumber - 1] = true;
+						var btn = document.getElementById("btn" + cardNumber);
+						if (btn) {
+							btn.style.display = "none"; // Hide the button
+						}
+						typeWriter(cardNumber);
+					}
+				}
+				
+				function typeWriter(cardNumber) {
+					var i = 0;
+					var interval = setInterval(function() {
+						var paragraph = document.getElementById("demo" + cardNumber);
+						if (i < txt[cardNumber - 1].length && paragraph) {
+							paragraph.innerHTML += txt[cardNumber - 1].charAt(i);
+							i++;
+						} else {
+							clearInterval(interval); // Stop the typing animation
+						}
+					}, speed);
+				}
+				</script>
+				
+			
+
+
+	
+
+
+
+		<!-- ContactUs section start-->
+
+		<section id="contact" class="main_heading my-5 mt-5">
+			<div class="text-center ">
+				<h1 class="display-4" style="color: white;">Contact Us</h1>
+				<hr class="w-25 mx-auto" />
+			</div>
+
+		<div class="container">
+				<div class="row">
+					<div class="col-xxl-8 col-md-8  col-10 mx-auto">
+							<form>
+							  <div class="mb-3">
+							    <label for="exampleInputEmail1" class="form-label"  style="color: white;">Name</label>
+							    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							    
+							  </div>
+
+							  <div class="mb-3">
+							    <label for="exampleInputEmail1" class="form-label" style="color: white;">Email address</label>
+							    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							    <div id="emailHelp" class="form-text" style="color: white;">We'll never share your email with anyone else.</div>
+							  </div>
+
+							  <div class="mb-3">
+							    <label for="exampleInputPassword1" class="form-label" style="color: white;">Password</label>
+							    <input type="password" class="form-control" id="exampleInputPassword1">
+							  </div>
+
+							  <div class="mb-3">
+							  	<label for="exampleInputEmail1" class="form-label" style="color: white;">Gender</label>
+							  	<div class="form-check form-check-inline">
+											  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+											  <label class="form-check-label" for="inlineRadio1" style="color: white;">Male</label>
+											</div>
+											<div class="form-check form-check-inline">
+											  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+											  <label class="form-check-label" for="inlineRadio2" style="color: white;">Female</label>
+											</div>
+											
+							  	
+							  	</div>
+
+							  	
+							  	
+							  	<div class="mb-3">
+							  		<label for="exampleInputEmail1" class="form-label" style="color: white;">State</label>
+							  		<select class="form-select" aria-label="Default select example">
+										  <option selected>Select State</option>
+										  <option value="1">Johor</option>
+										  <option value="2">Kedah</option>
+										  <option value="3">Kelantan</option>
+										  <option value="4">Melaka</option>
+										  <option value="5">Negeri Sembilan</option>
+										  <option value="6">Pahang</option>
+										  <option value="7">Perak</option>
+										  <option value="8">Perlis</option>
+										  <option value="9">Pulau Pinang</option>
+										  <option value="10">Sabah</option>
+										  <option value="11">Sarawak</option>
+										  <option value="12">Selangor</option>
+										  <option value="13">Terengganu</option>
+										  <option value="14">Wilayah Perseketuan</option>
+										</select>
+							  	</div>
+							  	<div class="mb-3">
+									  <label for="exampleFormControlTextarea1" class="form-label" style="color: white;">Briefly explain your reason for contacting us</label>
+									  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+
+									<div class="mb-3">
+									  <label for="formFile" class="form-label" style="color: white;">Upload file (if necessary)</label>
+									  <input class="form-control" type="file" id="formFile">
+									</div>
+
+									<div class="mb-3">
+									  <label for="exampleFormControlTextarea1" class="form-label" style="color: white;">Address</label>
+									  <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+									</div>
+
+
+
+							  
+							  <div class="mb-3 form-check">
+							    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+							    <label class="form-check-label" for="exampleCheck1" style="color: white;">Check me out</label>
+							  </div>
+							  <button type="submit" class="btn btn-primary custom-btn" style="color: white;">Submit</button>
+							</form>
+						
+					</div>
+					
+				</div>
+		</div>
+
+		</section>
+		<!-- ContactUs section end-->	
+
+
+		<!-- footer section start-->
+			<!-- footer section start-->
+		<!-- footer section start-->
+		<footer style="margin-top: -1000px;">
+			
+			<section>
+				<!-- Bootstrap Footer -->
+				<div class="background border-bottom">
+			  <svg
+				version="1.1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				x="0px"
+				y="100%"
+				width="100%"
+				height=1200px
+				viewBox="0 0 1600 900"
+			  >
+				<defs>
+				  <path
+					id="wave"
+					fill="rgba(105, 27, 252, 0.6)"
+					d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+			s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+				  />
+				</defs>
+				<g>
+				  <use xlink:href="#wave" opacity=".4">
+					<animateTransform
+					  attributeName="transform"
+					  attributeType="XML"
+					  type="translate"
+					  dur="8s"
+					  calcMode="spline"
+					  values="270 230; -334 180; 270 230"
+					  keyTimes="0; .5; 1"
+					  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+					  repeatCount="indefinite"
+					/>
+				  </use>
+				  <use xlink:href="#wave" opacity=".6">
+					<animateTransform
+					  attributeName="transform"
+					  attributeType="XML"
+					  type="translate"
+					  dur="6s"
+					  calcMode="spline"
+					  values="-270 230;243 220;-270 230"
+					  keyTimes="0; .6; 1"
+					  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+					  repeatCount="indefinite"
+					/>
+				  </use>
+				  <use xlink:href="#wave" opacty=".9">
+					<animateTransform
+					  attributeName="transform"
+					  attributeType="XML"
+					  type="translate"
+					  dur="4s"
+					  calcMode="spline"
+					  values="0 230;-140 200;0 230"
+					  keyTimes="0; .4; 1"
+					  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+					  repeatCount="indefinite"
+					/>
+				  </use>
+				</g>
+			  </svg>
+			</div>
+				
+					<!-- Footer Social -->
+					<div class="container border-bottom ">
+						<ul class="d-flex w-100 justify-content-center flex-wrap flex-sm-row">
+							<li class="pe-auto list-group-item my-2 px-4"><a href=""><i class="fs-5 text-white fa-brands fa-instagram"></i></a></li>
+							<li class="pe-auto list-group-item my-2 px-4"><a href=""><i class="fs-5 text-white fa-brands fa-facebook"></i></a></li>
+							<li class="pe-auto list-group-item my-2 px-4"><a href=""><i class="fs-5 text-white fa-brands fa-linkedin"></i></a></li>
+							<li class="pe-auto list-group-item my-2 px-4"><a href=""><i class="fs-5 text-white fa-brands fa-github"></i></a></li>
+							<li class="pe-auto list-group-item my-2 px-4"><a href=""><i class="fs-5 text-white fa-brands fa-twitter"></i></a></li>
+						</ul>
+					</div>
+			
+					<!-- Footer Company Name  -->
+					<h4 class="text-center my-4 text-white">
+						Kamikaze
+					</h4>
+			
+					<!-- Footer Flex Container -->
+					<div class="w-100 d-flex flex-wrap justify-content-between">
+			
+						<!-- Footer Flex Item -->
+						<div class="m-2 flex-item" style="width: 20rem;">
+							<h4 class="heading" style="color: #e65b00;">Kamikaze</h4>
+							<div class="content">
+								<ul class="px-0">
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">We are a dynamic and enthusiastic group of learners passionate about exploring the fascinating world of web programming. 
+									Through collaboration, experimentation, and a hunger for knowledge, we aim to not only master the fundamentals but also push the boundaries of our creativity to develop innovative web solutions. 
+									Join us as we embark on this exciting journey of learning and discovery in the realm of web development!</a></li>
+								</ul>
+							</div>
+						</div>
+			
+						<!-- Footer Flex Item -->
+						<div class="m-2 flex-item">
+							<h4 class="heading" style="color: #e65b00;">Services</h4>
+							<div class="content">
+								<ul class="px-0">
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">HTML</a></li>
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">CSS</a></li>
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">JavaScript</a></li>
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">Bootstrap</a></li>
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">ReactJS</a></li>
+								</ul>
+							</div>
+						</div>
+			
+						<!-- Footer Flex Item -->
+						<div class="m-2 flex-item">
+							<h4 class="heading" style="color: #e65b00;">Useful Links</h4>
+							<div class="content">
+								<ul class="px-0">
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">Help</a></li>
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">Pricing</a></li>
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">Settings</a></li>
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">Order Details</a></li>
+								</ul>
+							</div>
+						</div>
+			
+						<!-- Footer Flex Item -->
+						<div class="m-2 flex-item">
+							<h4 class="heading" style="color: #e65b00;">Contact Us</h4>
+							<div class="content">
+								<ul class="px-0">
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">Universiti Teknologi Malaysia,<br> Jalan Iman, 81310 Skudai,<br> 
+																															Johor, Malaysia , Skudai,<br> Iskandar Puteri , Johor , Malaysia</a></li>
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">kamikaze@graduate.utm.my</a></li>
+									<li class="my-2 list-group-item"><a class="text-white text-decoration-none my-2" href="">+60123456789</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				
+			
+			
+			
+				<!-- Adding Scripts to Our HTML code -->
+				<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+			
+
+			</section>
+		  </footer>
+<!-- footer section end-->
+<!-- footer section end-->
+
+
+		<!-- footer section end-->
+
+
+
+
+
+
+
+
+	 <!-- Option 1: Bootstrap Bundle with Popper -->
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	 <script type="text/javascript">
+			 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			 return new bootstrap.Tooltip(tooltipTriggerEl)
+		   
+	   })
+	 </script>
+	 <script>
+	   const flipCardWrapAll = document.querySelector("#flip-card-wrap-all");
+	   const cardsWrapper = document.querySelectorAll(".flip-card-3D-wrapper");
+	   const cards = document.querySelectorAll(".flip-card");
+	   let frontButtons = "";
+	   let backButtons = "";
+
+	   for (let i = 0; i < cardsWrapper.length; i++) {
+		   frontButtons = cardsWrapper[i].querySelector(".flip-card-btn-turn-to-back");
+		   frontButtons.style.visibility = "visible";
+		   frontButtons.onclick = function() {
+			   cards[i].classList.toggle('do-flip');
+		   }
+		   
+		   backButtons = cardsWrapper[i].querySelector(".flip-card-btn-turn-to-front");
+		   backButtons.style.visibility = "visible";
+		   backButtons.onclick = function() {
+			   cards[i].classList.toggle('do-flip');
+		   }  
+	   } 
+   </script>
+	<script>
+document.addEventListener("DOMContentLoaded", function() { 
+    const carousel = document.querySelector(".carousel"); 
+    const arrowBtns = document.querySelectorAll(".wrapper i"); 
+    const wrapper = document.querySelector(".wrapper"); 
+  
+    const firstCard = carousel.querySelector(".card"); 
+    const firstCardWidth = firstCard.offsetWidth; 
+  
+    let isDragging = false, 
+        startX, 
+        startScrollLeft, 
+        timeoutId; 
+  
+    const dragStart = (e) => {  
+        isDragging = true; 
+        carousel.classList.add("dragging"); 
+        startX = e.pageX; 
+        startScrollLeft = carousel.scrollLeft; 
+    }; 
+  
+    const dragging = (e) => { 
+        if (!isDragging) return; 
+      
+        // Calculate the new scroll position 
+        const newScrollLeft = startScrollLeft - (e.pageX - startX); 
+      
+        // Check if the new scroll position exceeds  
+        // the carousel boundaries 
+        if (newScrollLeft <= 0 || newScrollLeft >=  
+            carousel.scrollWidth - carousel.offsetWidth) { 
+              
+            // If so, prevent further dragging 
+            isDragging = false; 
+            return; 
+        } 
+      
+        // Otherwise, update the scroll position of the carousel 
+        carousel.scrollLeft = newScrollLeft; 
+    }; 
+  
+    const dragStop = () => { 
+        isDragging = false;  
+        carousel.classList.remove("dragging"); 
+    }; 
+  
+    const autoPlay = () => { 
+      
+        // Return if window is smaller than 800 
+        if (window.innerWidth < 800) return;  
+          
+        // Calculate the total width of all cards 
+        const totalCardWidth = carousel.scrollWidth; 
+          
+        // Calculate the maximum scroll position 
+        const maxScrollLeft = totalCardWidth - carousel.offsetWidth; 
+          
+        // If the carousel is at the end, stop autoplay 
+        if (carousel.scrollLeft >= maxScrollLeft) return; 
+          
+        // Autoplay the carousel after every 2500ms 
+        timeoutId = setTimeout(() =>  
+            carousel.scrollLeft += firstCardWidth, 2500); 
+    }; 
+  
+    carousel.addEventListener("mousedown", dragStart); 
+    carousel.addEventListener("mousemove", dragging); 
+    document.addEventListener("mouseup", dragStop); 
+    wrapper.addEventListener("mouseenter", () =>  
+        clearTimeout(timeoutId)); 
+    wrapper.addEventListener("mouseleave", autoPlay); 
+  
+    // Add event listeners for the arrow buttons to  
+    // scroll the carousel left and right 
+    arrowBtns.forEach(btn => { 
+        btn.addEventListener("click", () => { 
+            carousel.scrollLeft += btn.id === "left" ?  
+                -firstCardWidth : firstCardWidth; 
+        }); 
+    }); 
+}); 
+</script>
+	
+
+</body>
+</html>
